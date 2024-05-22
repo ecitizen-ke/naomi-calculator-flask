@@ -1,11 +1,11 @@
 from flask import Flask
-from subtract_app import subtraction_bp
+from multiply_app import multiplication_bp
 
 def create_app():
-    app=Flask(__name__)
+    app = Flask(__name__)
 
     #blueprints
-    app.register_blueprint(subtraction_bp)
+    app.register_blueprint(multiplication_bp)
 
     return app
 
